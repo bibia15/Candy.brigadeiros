@@ -8,7 +8,7 @@ body {
 header {
     background-color: #7b3f00;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -34,15 +34,54 @@ section {
     border-radius: 5px;
 }
 
-.imagem-brigadeiros {
+.produto-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.imagem-brigadeiros img {
-    width: 30%;
+.produto {
+    border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#contatoForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatoForm label {
+    margin-top: 10px;
+}
+
+#contatoForm input, #contatoForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #7b3f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
