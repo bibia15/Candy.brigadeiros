@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delícias de Brigadeiro</title>
+    <title>Brigadeiro Delícias</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Delícias de Brigadeiro</h1>
+        <h1>Brigadeiro Delícias</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -20,25 +20,51 @@
 
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>Bem-vindo ao mundo dos brigadeiros! Aqui, você encontrará as melhores receitas e dicas para fazer esses doces irresistíveis.</p>
+        <p>Na Brigadeiro Delícias, oferecemos os melhores brigadeiros artesanais, feitos com ingredientes de qualidade e muito amor. Experimente nossos sabores únicos!</p>
     </section>
 
-    <section id="galeria">
-        <h2>Galeria de Brigadeiros</h2>
-        <div class="imagem-brigadeiros">
-            <img src="brigadeiro1.jpg" alt="Brigadeiro 1">
-            <img src="brigadeiro2.jpg" alt="Brigadeiro 2">
-            <img src="brigadeiro3.jpg" alt="Brigadeiro 3">
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produto-container">
+            <div class="produto">
+                <img src="brigadeiro1.jpg" alt="Brigadeiro Tradicional">
+                <h3>Brigadeiro Tradicional</h3>
+                <p>R$ 2,50 cada</p>
+                <button onclick="adicionarAoCarrinho('Brigadeiro Tradicional')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="brigadeiro2.jpg" alt="Brigadeiro de Nutella">
+                <h3>Brigadeiro de Nutella</h3>
+                <p>R$ 3,50 cada</p>
+                <button onclick="adicionarAoCarrinho('Brigadeiro de Nutella')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="brigadeiro3.jpg" alt="Brigadeiro Gourmet">
+                <h3>Brigadeiro Gourmet</h3>
+                <p>R$ 4,50 cada</p>
+                <button onclick="adicionarAoCarrinho('Brigadeiro Gourmet')">Adicionar ao Carrinho</button>
+            </div>
         </div>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>Para mais informações, entre em contato conosco pelo e-mail: contato@brigadeiros.com</p>
+        <form id="contatoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagemSucesso" class="hidden">Obrigado pela sua mensagem!</div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Delícias de Brigadeiro. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Brigadeiro Delícias. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
